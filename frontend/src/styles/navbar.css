@@ -1,0 +1,33 @@
+nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(90deg,rgb(16, 77, 97),rgb(67, 185, 224));
+    color: white;
+    font-size: 25px;
+    z-index: 1000;
+}
+
+nav>ul{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    transition: all 0.1 ease-in;
+}
+
+.links{
+    text-decoration: none;
+    color: white;
+}
+.links:hover{
+    
+    border-bottom: 2px solid rgb(224, 27, 60);
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}

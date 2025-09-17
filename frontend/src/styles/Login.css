@@ -1,0 +1,131 @@
+.login-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #80deea);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.welcome-section {
+  flex: 1;
+  color: #004d40;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(135deg, #009688, #004d40);
+  color: white;
+}
+
+.welcome-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.welcome-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.form-section {
+  flex: 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-section h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #444;
+}
+
+input {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border: 1px solid #009688;
+  outline: none;
+}
+
+.error-box {
+  background: #ffe0e0;
+  color: #d32f2f;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.login-btn {
+  margin-top: 2rem;
+  padding: 0.85rem;
+  background: #009688;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.login-btn:hover {
+  background: #00796b;
+  transform: translateY(-2px);
+}
+
+.footer-text {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.footer-text a {
+  color: #009688;
+  text-decoration: none;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .welcome-section,
+  .form-section {
+    flex: none;
+    width: 100%;
+    min-height: 50vh;
+  }
+
+  .welcome-section {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .form-section {
+    padding: 2rem;
+  }
+}

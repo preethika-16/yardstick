@@ -1,0 +1,77 @@
+.updrade-container{
+    height: 100vh;
+    background-color: teal;
+    display: flex;
+    overflow: hidden;
+    margin-top: auto;
+}
+
+.main-container{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+   
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+}
+.rotate-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    height: 100vh;
+    background-color: white;
+    align-self: flex-end;
+    transform: rotate(-20deg);
+    border-radius: 4rem;
+    
+}
+
+.rotate-container> img{
+    background:hidden;
+}
+.checkout-btn{
+    background-color: transparent;
+    color:black;
+}
+.main-container>p{
+    font-size: 26px;
+}
+.btn{
+    width: 100%;
+    display: flex;
+    flex:wrap;
+    justify-content: center;
+    
+}
+.btn > button {
+    background: linear-gradient(135deg, #14b8a6, #0d9488); /* teal gradient */
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn > button:hover {
+    background: white;
+    color: #0d9488; /* teal text */
+    cursor: pointer;
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width:780px) {
+    .rotate-container{
+        display: none;
+    }
+    .main-container{
+        width: 100%;
+    }
+}
